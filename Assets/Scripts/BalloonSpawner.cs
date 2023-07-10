@@ -10,6 +10,7 @@ public class BalloonSpawner : MonoBehaviour
     void Start()
     {
         StartCoroutine(StartSpawningBalloon());
+        
     }
 
     IEnumerator StartSpawningBalloon()
@@ -20,6 +21,7 @@ public class BalloonSpawner : MonoBehaviour
             Instantiate(Balloons[i], Spawnpoints[i].position, Quaternion.identity);
         }
         StartCoroutine(StartSpawningBalloon());
+        
 
     }
 }

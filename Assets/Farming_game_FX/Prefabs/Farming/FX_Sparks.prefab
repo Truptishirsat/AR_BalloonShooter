@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 38369065356413430}
   - component: {fileID: 38369065356413431}
   - component: {fileID: 8665862688214150722}
+  - component: {fileID: 6400602682100138352}
   m_Layer: 0
   m_Name: FX_Sparks
   m_TagString: Untagged
@@ -4968,3 +4969,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6400602682100138352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38369065356413428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09ac19db8b31b6a4bab1871088ff5f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

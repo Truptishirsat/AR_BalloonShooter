@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 22732923}
   - component: {fileID: 22732922}
   - component: {fileID: 22732921}
+  - component: {fileID: 22732925}
   m_Layer: 0
   m_Name: AR Camera
   m_TagString: MainCamera
@@ -250,6 +251,110 @@ Transform:
   m_Children: []
   m_Father: {fileID: 388525031}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &22732925
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22732919}
+  m_Enabled: 1
+--- !u!1 &22736521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 22736523}
+  - component: {fileID: 22736522}
+  m_Layer: 0
+  m_Name: ParticleSystemObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &22736522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22736521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89dc0808d6db9f14a87ae8410809f249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialSize: 3
+  particlesystem: {fileID: 38369065356413430, guid: e4b5c831fd6bb9f49b4b81480a0637c7,
+    type: 3}
+--- !u!4 &22736523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22736521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 527.9839, y: 334.07266, z: -7.504011}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &159714336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159714338}
+  - component: {fileID: 159714337}
+  m_Layer: 0
+  m_Name: BalloonObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &159714337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159714336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83954bd43033ed445931cc7409008d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialSize: 3
+  Balloons:
+  - {fileID: 4187144168491269354, guid: 68f17cd3cd37a5146bf4ece738903f3c, type: 3}
+  - {fileID: 4187144168491269354, guid: db22502f7e763c441afb7962d6b19d22, type: 3}
+  - {fileID: 4187144168491269354, guid: 68c32fa04759a8044bfc5d37f6cc12f1, type: 3}
+--- !u!4 &159714338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159714336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 69.51403, y: 5.881164, z: 0.07653359}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &279473279
 GameObject:
@@ -796,34 +901,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1445153424}
-  - component: {fileID: 1445153423}
+  - component: {fileID: 1445153425}
   m_Layer: 0
-  m_Name: BalloonSpawn
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1445153423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445153422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83954bd43033ed445931cc7409008d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Spawnpoints:
-  - {fileID: 1275889261}
-  - {fileID: 1187674886}
-  - {fileID: 324990236}
-  Balloons:
-  - {fileID: 4187144168491269354, guid: 68f17cd3cd37a5146bf4ece738903f3c, type: 3}
-  - {fileID: 4187144168491269354, guid: db22502f7e763c441afb7962d6b19d22, type: 3}
-  - {fileID: 4187144168491269354, guid: 68c32fa04759a8044bfc5d37f6cc12f1, type: 3}
 --- !u!4 &1445153424
 Transform:
   m_ObjectHideFlags: 0
@@ -839,6 +924,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1445153425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445153422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9612a836689f3f4bbb99b3754468d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Spawnpoints:
+  - {fileID: 1275889261}
+  - {fileID: 1187674886}
+  - {fileID: 324990236}
 --- !u!1 &1508709847
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,8 +970,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 22732919}
-  particlesystem: {fileID: 38369065356413430, guid: e4b5c831fd6bb9f49b4b81480a0637c7,
-    type: 3}
   destroyDelay: 3
 --- !u!4 &1508709849
 Transform:
